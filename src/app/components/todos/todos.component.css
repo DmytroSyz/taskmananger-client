@@ -1,0 +1,11 @@
+.table {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.checkbox {
+  color: #fad75e;
+}

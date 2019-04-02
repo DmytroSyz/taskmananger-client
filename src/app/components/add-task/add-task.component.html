@@ -1,0 +1,38 @@
+<form action="" [formGroup]="validForm">
+  <div class="add-task-wrapper">
+    <h1 mat-dialog-title>Add New Task</h1>
+    <div mat-dialog-content class="add-task-wrapper">
+      <mat-form-field>
+        <input name="title" type="text" formControlName="title" placeholder="Title *" matInput>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input formControlName="description" name="description" type="text" placeholder="Description" matInput>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input formControlName="startDate" matInput [matDatepicker]="picker1" placeholder="Start date *" disabled>
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1 disabled="false"></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input formControlName="finishDate" matInput [matDatepicker]="picker2" placeholder="Finish date *" disabled>
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2 disabled="false"></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-select [(value)]="selected" placeholder="Priority *">
+          <mat-option value="Low">Low</mat-option>
+          <mat-option value="Middle">Middle</mat-option>
+          <mat-option value="High">High</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <div mat-dialog-actions>
+    <button (click)="onNoClick()" mat-button>No Thanks</button>
+    <button (click)="onSubmit()" mat-button>Ok</button>
+  </div>
+</form>

@@ -1,0 +1,23 @@
+<h1 mat-dialog-title>Login</h1>
+<form action="" [formGroup]="validForm">
+  <h4 *ngIf="invalidData" class="mat-error">Incorrect data</h4>
+  <div mat-dialog-content class="login-wrapper">
+    <mat-form-field>
+      <input type="text" placeholder="Email" formControlName="email" matInput>
+    </mat-form-field>
+
+    <mat-form-field>
+      <input type="password" placeholder="Pass" formControlName="pass" matInput>
+    </mat-form-field>
+
+    <ng-container>
+      <mat-checkbox formControlName="remember">Remember me</mat-checkbox>
+    </ng-container>
+
+    <button mat-button (click)="onSignUp()">Create Acc</button>
+  </div>
+</form>
+<div mat-dialog-actions>
+  <button (click)="onNoClick()" mat-button>No Thanks</button>
+  <button (click)="onSubmit()" mat-button>Ok</button>
+</div>

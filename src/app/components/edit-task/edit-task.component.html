@@ -1,0 +1,43 @@
+<form action="" [formGroup]="validForm">
+  <div class="add-task-wrapper">
+    <h1 mat-dialog-title>Edit Task</h1>
+    <div mat-dialog-content class="edit-task-wrapper">
+      <mat-form-field>
+        <input name="title" type="text" value="{{value.titleValue}}" formControlName="title" placeholder="Title *"
+               matInput>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input formControlName="description" value="{{value.descriptionValue}}" name="description" type="text"
+               placeholder="Description" matInput>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input formControlName="startDate" value="{{value.startDateValue}}" matInput [matDatepicker]="picker1"
+               placeholder="Start date *">
+        <mat-datepicker-toggle matSuffix [for]="picker1"></mat-datepicker-toggle>
+        <mat-datepicker #picker1></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field>
+        <input formControlName="finishDate" value="{{value.finishDateValue}}" matInput [matDatepicker]="picker2"
+               placeholder="Finish date *">
+        <mat-datepicker-toggle matSuffix [for]="picker2"></mat-datepicker-toggle>
+        <mat-datepicker #picker2></mat-datepicker>
+      </mat-form-field>
+
+      <mat-form-field>
+        <mat-select [(value)]="value.priorityValue" placeholder="Priority *">
+          <mat-option value="Low">Low</mat-option>
+          <mat-option value="Middle">Middle</mat-option>
+          <mat-option value="High">High</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+  <div mat-dialog-actions>
+    <button (click)="onNoClick()" mat-button>No Thanks</button>
+    <button (click)="onSubmit()" mat-button>Ok</button>
+  </div>
+</form>
+

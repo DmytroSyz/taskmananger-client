@@ -1,0 +1,4 @@
+.add-task-wrapper {
+  display: flex;
+  flex-direction: column;
+}
