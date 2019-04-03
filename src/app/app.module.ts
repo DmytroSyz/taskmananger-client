@@ -1,13 +1,13 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { ReactiveFormsModule, FormsModule} from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { appRouts } from '../../routs';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 
-import {MaterialModule} from '../../material-module';
-import {MatIconModule} from '@angular/material/icon';
+import { MaterialModule } from '../../material-module';
+import { MatIconModule } from '@angular/material/icon';
 
 
 import { AppComponent } from './app.component';

@@ -1,8 +1,8 @@
-import {Component, Inject, OnInit} from '@angular/core';
-import {MAT_DIALOG_DATA, MatDialogRef} from '@angular/material';
-import {FormBuilder, FormGroup} from '@angular/forms';
-import {DataService} from '../../services/data.service';
-import {Todo} from '../../../../todo';
+import { Component, Inject, OnInit } from '@angular/core';
+import { MAT_DIALOG_DATA, MatDialogRef } from '@angular/material';
+import { FormBuilder, FormGroup } from '@angular/forms';
+import { DataService } from '../../services/data.service';
+import { Todo } from '../../../../todo';
 
 @Component({
   selector: 'app-edit-task',

@@ -1,8 +1,8 @@
-import {Component, OnInit} from '@angular/core';
-import {AddTaskComponent} from '../add-task/add-task.component';
-import {MatDialog} from '@angular/material';
-import {LoginComponent} from '../login/login.component';
-import {DataService} from '../../services/data.service';
+import { Component, OnInit } from '@angular/core';
+import { AddTaskComponent } from '../add-task/add-task.component';
+import { MatDialog } from '@angular/material';
+import { LoginComponent } from '../login/login.component';
+import { DataService } from '../../services/data.service';
 
 @Component({
   selector: 'app-header',

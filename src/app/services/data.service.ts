@@ -1,9 +1,9 @@
-import {Injectable} from '@angular/core';
-import {HttpClient, HttpHeaders} from '@angular/common/http';
-import {Observable, Subject} from 'rxjs';
-import {Todo} from '../../../todo';
-import {User} from '../../../user';
-import {MatSnackBar} from '@angular/material';
+import { Injectable } from '@angular/core';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+import { Observable, Subject } from 'rxjs';
+import { Todo } from '../../../todo';
+import { User } from '../../../user';
+import { MatSnackBar } from '@angular/material';
 
 @Injectable({
   providedIn: 'root'

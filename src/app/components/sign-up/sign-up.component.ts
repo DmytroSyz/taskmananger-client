@@ -1,8 +1,8 @@
-import {Component, OnInit} from '@angular/core';
-import {MatDialogRef} from '@angular/material';
-import {DataService} from '../../services/data.service';
-import {FormBuilder, FormGroup, Validators} from '@angular/forms';
-import {User} from '../../../../user';
+import { Component, OnInit } from '@angular/core';
+import { MatDialogRef } from '@angular/material';
+import { DataService } from '../../services/data.service';
+import { FormBuilder, FormGroup, Validators } from '@angular/forms';
+import { User } from '../../../../user';
 
 @Component({
   selector: 'app-sign-up',
