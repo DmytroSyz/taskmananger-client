@@ -8,7 +8,7 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 
 Run `npm install` or `yarn install` for install all application dependencies.
 
-## Backend 
+## API 
 
 NodeJS server you can find [here](https://github.com/DmytroSyz/taskmanager-server)
 

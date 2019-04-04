@@ -19,26 +19,27 @@ import { LoginComponent } from './components/login/login.component';
 import { SignUpComponent } from './components/sign-up/sign-up.component';
 
 @NgModule({
-  declarations: [
-    AppComponent,
-    TodosComponent,
-    HeaderComponent,
-    AddTaskComponent,
-    EditTaskComponent,
-    LoginComponent,
-    SignUpComponent
-  ],
-  imports: [
-    BrowserModule,
-    MaterialModule,
-    FormsModule,
-    ReactiveFormsModule,
-    RouterModule.forRoot(appRouts),
-    BrowserAnimationsModule,
-    HttpClientModule,
-    MatIconModule
-  ],
-  providers: [],
-  bootstrap: [AppComponent]
+    declarations: [
+        AppComponent,
+        TodosComponent,
+        HeaderComponent,
+        AddTaskComponent,
+        EditTaskComponent,
+        LoginComponent,
+        SignUpComponent
+    ],
+    imports: [
+        BrowserModule,
+        MaterialModule,
+        FormsModule,
+        ReactiveFormsModule,
+        RouterModule.forRoot(appRouts),
+        BrowserAnimationsModule,
+        HttpClientModule,
+        MatIconModule
+    ],
+    providers: [],
+    bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {
+}
