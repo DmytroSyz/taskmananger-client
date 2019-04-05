@@ -1,5 +1,5 @@
 <h1 mat-dialog-title>Login</h1>
-<form action="" [formGroup]="validForm">
+<form [formGroup]="validForm">
     <h4 *ngIf="invalidData" class="mat-error">Incorrect data</h4>
     <div mat-dialog-content class="login-wrapper">
         <mat-form-field>
@@ -14,7 +14,7 @@
             <mat-checkbox formControlName="remember">Remember me</mat-checkbox>
         </ng-container>
 
-        <button mat-button (click)="onSignUp()">Create Acc</button>
+        <button type="button" mat-button (click)="onSignUp()">Create Acc</button>
     </div>
 </form>
 <div mat-dialog-actions>
