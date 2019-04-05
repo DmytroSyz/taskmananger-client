@@ -1,15 +1,15 @@
 <mat-toolbar class="top-menu">
-  <mat-toolbar-row>
-    <button [disabled]="!userName" (click)="addNewTask()" class="add-new" mat-fab>
-      <mat-icon>add</mat-icon>
-    </button>
-    <span class="logo">TODO LIST</span>
-    <span class="space"></span>
-    <span class="space"></span>
-    <span class="space"></span>
-    <span *ngIf="userName" class="user-name">Hi, {{userName}}</span>
-    <span class="space"></span>
-    <button *ngIf="!userName" (click)="onLogin()" mat-flat-button class="aut-button">Login</button>
-    <button *ngIf="userName" (click)="onLogout()" mat-flat-button class="aut-button">Logout</button>
-  </mat-toolbar-row>
+    <mat-toolbar-row>
+        <button [disabled]="!userName" (click)="addNewTask()" class="add-new" mat-fab>
+            <mat-icon>add</mat-icon>
+        </button>
+        <span class="logo">TODO LIST</span>
+        <span class="space"></span>
+        <span class="space"></span>
+        <span class="space"></span>
+        <span *ngIf="userName" class="user-name">Hi, {{userName}}</span>
+        <span class="space"></span>
+        <button *ngIf="!userName" (click)="onLogin()" mat-flat-button class="aut-button">Login</button>
+        <button *ngIf="userName" (click)="onLogout()" mat-flat-button class="aut-button">Logout</button>
+    </mat-toolbar-row>
 </mat-toolbar>

@@ -1,25 +1,25 @@
 .space {
-  flex: 1 1 auto;
+    flex: 1 1 auto;
 }
 
 .logo {
-  color: #fff;
+    color: #fff;
 }
 
 .add-new {
-  margin-bottom: -62px;
-  background-color: #fad75e;
-  color: #000;
+    margin-bottom: -62px;
+    background-color: #fad75e;
+    color: #000;
 }
 
 .top-menu {
-  background-color: #5f41b0;
+    background-color: #5f41b0;
 }
 
 .aut-button {
-  background-color: #fad75e;
+    background-color: #fad75e;
 }
 
 .user-name {
-  color: #fff;
+    color: #fff;
 }

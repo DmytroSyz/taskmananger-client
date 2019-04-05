@@ -31,7 +31,7 @@ export class TodosComponent implements OnInit {
     public dataSource = new MatTableDataSource();
 
 
-    constructor(private dataService: DataService,
+    constructor(public dataService: DataService,
                 private dialog: MatDialog) {
         this.dataSource.filterPredicate = this.createFilter();
     }

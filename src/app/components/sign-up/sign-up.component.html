@@ -1,25 +1,25 @@
 <h1 mat-dialog-title>Sign Up</h1>
 <form action="" [formGroup]="validForm">
-  <h4 class="mat-error" *ngIf="invalidUser">User with this email already exists</h4>
+    <h4 class="mat-error" *ngIf="invalidUser">User with this email already exists</h4>
 
-  <div mat-dialog-content class="sign-up-wrapper">
-    <mat-form-field>
-      <input type="text" placeholder="Email" formControlName="email" matInput>
-    </mat-form-field>
+    <div mat-dialog-content class="sign-up-wrapper">
+        <mat-form-field>
+            <input type="text" placeholder="Email" formControlName="email" matInput>
+        </mat-form-field>
 
 
-    <mat-form-field>
-      <input type="password" placeholder="Pass" formControlName="pass" matInput>
-    </mat-form-field>
+        <mat-form-field>
+            <input type="password" placeholder="Pass" formControlName="pass" matInput>
+        </mat-form-field>
 
-    <mat-form-field>
-      <input type="password" placeholder="Repeat pass" formControlName="rePass" matInput>
-      <mat-error>Incorrect repeat</mat-error>
-    </mat-form-field>
-  </div>
+        <mat-form-field>
+            <input type="password" placeholder="Repeat pass" formControlName="rePass" matInput>
+            <mat-error>Incorrect repeat</mat-error>
+        </mat-form-field>
+    </div>
 </form>
 
 <div mat-dialog-actions>
-  <button (click)="onNoClick()" mat-button>No Thanks</button>
-  <button (click)="onSubmit()" mat-button>Create</button>
+    <button (click)="onNoClick()" mat-button>No Thanks</button>
+    <button (click)="onSubmit()" mat-button>Create</button>
 </div>

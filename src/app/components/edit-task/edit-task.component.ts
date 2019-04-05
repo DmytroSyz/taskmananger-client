@@ -11,7 +11,7 @@ import { Todo } from '../../../../todo';
 })
 export class EditTaskComponent implements OnInit {
     public validForm: FormGroup;
-    private todos: Todo[];
+    private todos: Todo[] = [];
 
     public value = {
         titleValue: '',
@@ -93,17 +93,19 @@ export class EditTaskComponent implements OnInit {
     }
 
     onSearch(id): string {
-        for (let i = 0; i < this.todos.length; i++) {
-            if (this.todos[i].id === id) {
+        if (this.todos) {
+            for (let i = 0; i < this.todos.length; i++) {
+                if (this.todos[i].id === id) {
 
-                this.value.titleValue = this.todos[i].title;
-                this.value.descriptionValue = this.todos[i].description;
-                this.value.startDateValue = this.todos[i].startDate;
-                this.value.finishDateValue = this.todos[i].finishDate;
-                this.value.priorityValue = this.todos[i].priority;
+                    this.value.titleValue = this.todos[i].title;
+                    this.value.descriptionValue = this.todos[i].description;
+                    this.value.startDateValue = this.todos[i].startDate;
+                    this.value.finishDateValue = this.todos[i].finishDate;
+                    this.value.priorityValue = this.todos[i].priority;
 
-                return (this.value.titleValue, this.value.descriptionValue,
-                    this.value.startDateValue, this.value.finishDateValue);
+                    return (this.value.titleValue, this.value.descriptionValue,
+                        this.value.startDateValue, this.value.finishDateValue);
+                }
             }
         }
     }
